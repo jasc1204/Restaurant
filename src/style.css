@@ -1,18 +1,28 @@
 
+
 body{
     display: flex;
     flex-direction: column;
     overflow-y: auto;   /* scrolls inside this div */
+    margin:0px;
+    padding:0px;
 }
 
 header{
     background-color: antiquewhite;
+    justify-items: center;
+    margin: 5px;
+
 }
 button {
     color:rgb(168, 164, 164);
     border: 2px solid rgb(171, 166, 166);
     background-color: aqua;
     padding: 10px 20px;
+    width: auto ;
+    font-size: 25px;
+    block-size: auto;
+    border-radius: 15px;
 }
 
 .dish{
@@ -25,8 +35,10 @@ button {
     background-color: rgb(72, 159, 236);
     width: 500px;
     height: 500px;   
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    block-size: auto;
 }
-
 
 #content{
     display: flex;
@@ -43,7 +55,14 @@ button {
 img{
     width: auto;
     height: 200px;
+}
 
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 
