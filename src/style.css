@@ -1,0 +1,49 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;   /* scrolls inside this div */
+}
+
+header{
+    background-color: antiquewhite;
+}
+button {
+    color:rgb(168, 164, 164);
+    border: 2px solid rgb(171, 166, 166);
+    background-color: aqua;
+    padding: 10px 20px;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(72, 159, 236);
+    width: 500px;
+    height: 500px;   
+}
+
+
+#content{
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    border: 2px solid slategray;
+    overflow-y: auto;   /* scrolls inside this div */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    width: auto;
+    height: 200px;
+
+}
+
+
