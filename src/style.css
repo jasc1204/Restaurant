@@ -11,18 +11,29 @@ body{
 header{
     background-color: antiquewhite;
     justify-items: center;
-    margin: 5px;
+    padding: 4px;
 
 }
+
 button {
-    color:rgb(168, 164, 164);
-    border: 2px solid rgb(171, 166, 166);
+    color:rgb(6, 0, 0);
+    border: 2px solid rgb(97, 241, 238);
     background-color: aqua;
     padding: 10px 20px;
     width: auto ;
     font-size: 25px;
     block-size: auto;
     border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+
+button:active { 
+    background-color: wheat;
 }
 
 .dish{
@@ -38,6 +49,9 @@ button {
     border: 2px solid greenyellow;
     border-radius: 10px;
     block-size: auto;
+}
+.dish:hover{
+    transform: scale(1.05);
 }
 
 #content{
@@ -77,8 +91,20 @@ p{
     border-radius: 10px;
     block-size: auto;
     height: 100vh;
+    background-color: bisque;
 }
 
+#about:hover{
+    transform: scale(1.01);
+}
+
+#about > p {
+    font-size: 25px;
+}
+
+#about > h1 {
+    font-size:50px;
+}
 #newContent {
     height: 100vh;
 }
@@ -101,6 +127,9 @@ p{
   border: 8px solid black;
   border-radius: 10px;
 }
+#overlay:hover{
+    transform: scale(1.1);
+}
 
 #background::before {
         content: "";    
@@ -115,5 +144,7 @@ p{
 #fullImage{
     width: 100%;   /* fill horizontally */
     height: 100%;  /* fill vertically */
+
 }
+
 
