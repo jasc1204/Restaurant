@@ -16,7 +16,7 @@ export default function about(){
     We believe food is more than a meal—it’s culture, tradition, and connection.    Using only the freshest ingredients and authentic recipes, 
     we blend tradition with modern dining to create a unique culinary experience. 
     Whether it’s your first taste of Peru or a comforting reminder of home, 
-    we’re here to share the warmth, passion, and joy of our culture with you`;
+    we’re here to share the warmth, passion, and joy of our culture with you.`;
     ;
     newContent.appendChild(text);
     
