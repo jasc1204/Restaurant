@@ -49,7 +49,6 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 img{
@@ -65,4 +64,56 @@ p{
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 700px;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    block-size: auto;
+    height: 100vh;
+}
+
+#newContent {
+    height: 100vh;
+}
+
+#background {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("./images/restaurant.jpg") center/cover no-repeat;
+}
+
+#overlay {
+  height: 800px;
+  width: 800px;
+  background-color: rgb(236, 242, 200);
+  z-index: 1;
+  border: 8px solid black;
+  border-radius: 10px;
+}
+
+#background::before {
+        content: "";    
+        filter: blur(20px) brightness(0.90);
+        position:absolute;
+        background: inherit;             /* same background image */
+        inset:0;
+        z-index: 0; /* behind */
+           /* behind content */
+}
+
+#fullImage{
+    width: 100%;   /* fill horizontally */
+    height: 100%;  /* fill vertically */
+}
 
