@@ -3,7 +3,6 @@ export default function about(){
     const newContent = document.createElement("div");
     content.appendChild(newContent);
     newContent.id = "about";
-sdsd
     
     const header1 = document.createElement("h1");
     header1.textContent = "About";
